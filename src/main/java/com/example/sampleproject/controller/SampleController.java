@@ -1,13 +1,13 @@
 package com.example.sampleproject.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class SampleController {
 
-    @RequestMapping("/sample")
-    public String sample() {
+    @RequestMapping("/")
+    public String index() {
         return "sample";
     }
 }
